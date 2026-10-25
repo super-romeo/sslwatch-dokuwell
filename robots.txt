@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sslwatch.dokufolio.com/sitemap.xml

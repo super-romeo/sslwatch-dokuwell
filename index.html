@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager: код контейнера вставляет автор по заказу «Смоков» (СМ-09) -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://sslwatch.dokufolio.com/">
+<title>SSL certificate monitoring — expiry alerts for your sites</title>
+<meta name="description" content="For website owners: every certificate on your domains and subdomains checked daily, with alerts before it expires, when it changes or a renewal fails.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<!-- faq-jsonld:start -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Do I need to install anything on my server?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, certificates are checked from outside, the way a browser sees them."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "When do I get alerts?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "30, 14 and 3 days before expiry, and whenever a renewal fails or a certificate changes unexpectedly."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I monitor subdomains and mail servers?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes, any host name that serves a certificate."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it renew certificates?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. It monitors and alerts; renewal stays with you or your hosting provider."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I use it already?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not yet. The service is in preparation, and we are checking whether site owners need it."
+   }
+  }
+ ]
+}
+</script>
+<!-- faq-jsonld:end -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript): по заказу «Смоков» (СМ-09) -->
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Cert Expiry Watch</a></div>
+  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Know before your SSL certificate expires — every domain and subdomain checked every day</h1>
+    <p class="sub">For owners of websites, shops and web apps: add your domains, and each certificate is checked daily for its expiry date, issuer and chain; you get an alert weeks before expiry, when a certificate changes unexpectedly, or when an automatic renewal did not happen.</p>
+    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
+    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
+  </div>
+
+  <section id="what" data-view="features_view">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><b>Expiry alerts</b><span>Alerts 30, 14 and 3 days before a certificate expires.</span><br><a class="btn" href="price.html" data-ev="feature_expiry">I need this</a></div>
+      <div class="card"><b>Unexpected changes</b><span>A new issuer, a new key or a certificate you did not order.</span><br><a class="btn" href="price.html" data-ev="feature_change">I need this</a></div>
+      <div class="card"><b>Failed renewals</b><span>Automatic renewal that did not happen in time.</span><br><a class="btn" href="price.html" data-ev="feature_renewal">I need this</a></div>
+      <div class="card"><b>All your hosts</b><span>Domains, subdomains, mail and API endpoints in one list.</span><br><a class="btn" href="price.html" data-ev="feature_all">I need this</a></div>
+    </div>
+  </section>
+
+  <section id="example" data-view="example_view">
+    <h2>Example (fictional data)</h2>
+    <p class="fine">Small agency running 40 client sites, most with automatic renewal. One morning an alert says the certificate of a client's shop expires in 14 days and has not renewed — the DNS record for validation was removed during a redesign. The agency fixes it the same day, and the shop never shows a browser warning to its customers.</p>
+    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  </section>
+<!-- seo-tekst:start -->
+  <section id="opis">
+    <h2>How it works</h2>
+    <p>An expired SSL certificate turns a working website into a full-page browser warning. Visitors leave, online shops stop taking orders, and connected apps or payment callbacks fail, often on a weekend when nobody is watching.</p>
+    <p>Automatic renewal has made this rarer, but not rare. Renewals fail when a DNS record changes, a server moves, a firewall blocks validation or a forgotten subdomain keeps an old certificate. The problem is usually discovered by a customer, not by the owner.</p>
+    <p>The service watches your certificates from the outside, the way a visitor's browser sees them. You add your domains and subdomains — the main site, the shop, the admin panel, the mail server, the API — and each one is checked every day.</p>
+    <p>For every host you see the certificate's expiry date, the issuer, the names it covers and whether the chain is complete. A clear list shows which certificates are fine, which expire soon and which have problems.</p>
+    <p>Alerts go out 30, 14 and 3 days before expiry by email or to a team chat. If a certificate that should renew automatically is still the old one close to its expiry, you get a separate alert that the renewal did not happen.</p>
+    <p>The service also warns when a certificate changes unexpectedly: a different issuer, a new key, or a certificate issued for your domain that you did not order. Such changes can mean a misconfiguration, or that someone else obtained a certificate for your name.</p>
+    <p>When a site goes down or the certificate is served incorrectly — wrong name, incomplete chain, an old certificate on one server behind a load balancer — the alert says what is wrong, so you know where to look.</p>
+    <p>Agencies and freelancers who look after many client sites can group hosts by client and send each client a short monthly report showing that their certificates are in order.</p>
+    <p>A history is kept for every host: when each certificate was issued and replaced, and every alert that was sent. When something breaks, you can see at a glance whether the certificate changed recently and which change came first.</p>
+    <p>Getting started takes a few minutes: add domains one by one or paste a list. Nothing needs to be installed on your servers; the checks run from outside.</p>
+    <p>The service is built for website owners, small businesses, agencies and freelancers anywhere. It is in preparation: we are checking whether site owners need it before it is built.</p>
+    <p>The service monitors and alerts; renewing and installing certificates stays with the site owner or their hosting provider.</p>
+  </section>
+  <section id="faq">
+    <h2>Questions</h2>
+    <h3>Do I need to install anything on my server?</h3>
+    <p>No, certificates are checked from outside, the way a browser sees them.</p>
+    <h3>When do I get alerts?</h3>
+    <p>30, 14 and 3 days before expiry, and whenever a renewal fails or a certificate changes unexpectedly.</p>
+    <h3>Can I monitor subdomains and mail servers?</h3>
+    <p>Yes, any host name that serves a certificate.</p>
+    <h3>Does it renew certificates?</h3>
+    <p>No. It monitors and alerts; renewal stays with you or your hosting provider.</p>
+    <h3>Can I use it already?</h3>
+    <p>Not yet. The service is in preparation, and we are checking whether site owners need it.</p>
+  </section>
+<!-- seo-tekst:end -->
+  <section id="start" data-view="start_view">
+    <h2>Add your first domain</h2>
+    <p><label>Domains and subdomains to watch<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>1–5</option><option>6–20</option><option>21–100</option><option>More than 100</option></select></label></p>
+    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
+  <p class="muted">Certificate monitoring for your sites. Renewal and installation stay with the site owner or hosting provider.</p>
+</div></footer>
+
+</body>
+</html>
