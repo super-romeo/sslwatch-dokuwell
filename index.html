@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For website owners: every certificate on your domains and subdomains checked daily, with alerts before it expires, when it changes or a renewal fails.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Cert Expiry Watch</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Cert Expiry Watch</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Know before your SSL certificate expires — every domain and subdomain checked every day</h1>
-    <p class="sub">For owners of websites, shops and web apps: add your domains, and each certificate is checked daily for its expiry date, issuer and chain; you get an alert weeks before expiry, when a certificate changes unexpectedly, or when an automatic renewal did not happen.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For owners of websites</p>
+      <h1 class="rise" style="--i:1" data-len="long">Know before your SSL certificate expires&nbsp;<span class="soft">— every domain and subdomain checked every day</span></h1>
+      <p class="rise" style="--i:2">For owners of websites, shops and web apps: add your domains, and each certificate is checked daily for its expiry date, issuer and chain; you get an alert weeks before expiry, when a certificate changes unexpectedly, or when an automatic renewal did not happen.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" fill="#0a1524" font-weight="600">SSL certificate</text><line x1="120" y1="210" x2="1080" y2="210" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="250" width="44" height="44" rx="8" fill="#12397a" /><text x="200" y="282" font-size="32" fill="#0a1524">every day</text><rect x="130" y="350" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="382" font-size="32" fill="#0a1524">Expiry alerts</text><rect x="130" y="450" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="460" width="220" height="24" rx="12" fill="#dde2ea" /><rect x="130" y="550" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="560" width="300" height="24" rx="12" fill="#dde2ea" /><rect x="700" y="250" width="370" height="420" rx="20" fill="#dfe8f7" /><text x="730" y="320" font-size="34" fill="#0a1524" font-weight="600">Daily</text><rect x="740" y="500" width="50" height="120" rx="8" fill="#ffffff" /><rect x="820" y="420" width="50" height="200" rx="8" fill="#12397a" /><rect x="900" y="460" width="50" height="160" rx="8" fill="#ffffff" /><rect x="980" y="530" width="50" height="90" rx="8" fill="#b9c3d2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Owners of websites</dd></div>
+      <div><dt>Checks</dt><dd>Checked daily</dd></div>
+      <div><dt>Alerts</dt><dd>Weeks before expiry</dd></div>
+      <div><dt>Preparation</dt><dd>Service in preparation</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Expiry alerts</b><span>Alerts 30, 14 and 3 days before a certificate expires.</span><br><a class="btn" href="price.html" data-ev="feature_expiry">I need this</a></div>
-      <div class="card"><b>Unexpected changes</b><span>A new issuer, a new key or a certificate you did not order.</span><br><a class="btn" href="price.html" data-ev="feature_change">I need this</a></div>
-      <div class="card"><b>Failed renewals</b><span>Automatic renewal that did not happen in time.</span><br><a class="btn" href="price.html" data-ev="feature_renewal">I need this</a></div>
-      <div class="card"><b>All your hosts</b><span>Domains, subdomains, mail and API endpoints in one list.</span><br><a class="btn" href="price.html" data-ev="feature_all">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Expiry alerts</text><rect x="120" y="190" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="265" y="190" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="190" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="555" y="190" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="290" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="265" y="290" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="290" width="120" height="70" rx="10" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="555" y="290" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="390" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="265" y="390" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="390" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="555" y="390" width="120" height="70" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Expiry alerts</h3><p>Alerts 30, 14 and 3 days before a certificate expires.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_expiry">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Unexpected changes</text><rect x="120" y="190" width="300" height="28" rx="8" fill="#dde2ea" /><rect x="120" y="248" width="420" height="28" rx="8" fill="#b9c3d2" /><rect x="120" y="306" width="240" height="28" rx="8" fill="#dde2ea" /><rect x="120" y="364" width="360" height="28" rx="8" fill="#b9c3d2" /><circle cx="560" cy="430" r="58" fill="#dfe8f7" /><polyline points="532,430 552,452 592,404" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Unexpected changes</h3><p>A new issuer, a new key or a certificate you did not order.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_change">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Failed renewals</text><rect x="140" y="190" width="520" height="52" rx="26" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="268" width="520" height="52" rx="26" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="346" width="520" height="52" rx="26" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="424" width="520" height="52" rx="26" fill="#b9c3d2" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Failed renewals</h3><p>Automatic renewal that did not happen in time.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_renewal">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">All your hosts</text><rect x="120" y="190" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="184" y="200" width="280" height="24" rx="12" fill="#b9c3d2" /><polyline points="128,212 138,224 156,202" fill="none" stroke="#12397a" stroke-width="4" /><rect x="120" y="265" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="184" y="275" width="360" height="24" rx="12" fill="#b9c3d2" /><rect x="120" y="340" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="184" y="350" width="220" height="24" rx="12" fill="#b9c3d2" /><polyline points="128,362 138,374 156,352" fill="none" stroke="#12397a" stroke-width="4" /><rect x="120" y="415" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="184" y="425" width="320" height="24" rx="12" fill="#b9c3d2" /></svg></div>
+        <h3>All your hosts</h3><p>Domains, subdomains, mail and API endpoints in one list.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_all">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Small agency running 40 client sites, most with automatic renewal. One morning an alert says the certificate of a client's shop expires in 14 days and has not renewed — the DNS record for validation was removed during a redesign. The agency fixes it the same day, and the shop never shows a browser warning to its customers.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Small agency running 40 client sites, most with automatic renewal. One morning an alert says the certificate of a client's shop expires in 14 days and has not renewed — the DNS record for validation was removed during a redesign. The agency fixes it the same day, and the shop never shows a browser warning to its customers.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">automatic renewal</text><circle cx="600" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">expires in 14 days</text><circle cx="960" cy="150" r="20" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">same day</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" fill="#0a1524" font-weight="600">browser warning</text><rect x="170" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="270" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="370" y="440" width="64" height="64" rx="10" fill="#12397a" /><rect x="470" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="570" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><text x="170" y="620" font-size="32" fill="#566174">client sites</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>An expired SSL certificate turns a working website into a full-page browser warning. Visitors leave, online shops stop taking orders, and connected apps or payment callbacks fail, often on a weekend when nobody is watching.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>An expired SSL certificate turns a working website into a full-page browser warning. Visitors leave, online shops stop taking orders, and connected apps or payment callbacks fail, often on a weekend when nobody is watching.</p>
     <p>Automatic renewal has made this rarer, but not rare. Renewals fail when a DNS record changes, a server moves, a firewall blocks validation or a forgotten subdomain keeps an old certificate. The problem is usually discovered by a customer, not by the owner.</p>
     <p>The service watches your certificates from the outside, the way a visitor's browser sees them. You add your domains and subdomains — the main site, the shop, the admin panel, the mail server, the API — and each one is checked every day.</p>
     <p>For every host you see the certificate's expiry date, the issuer, the names it covers and whether the chain is complete. A clear list shows which certificates are fine, which expire soon and which have problems.</p>
@@ -116,31 +150,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Getting started takes a few minutes: add domains one by one or paste a list. Nothing needs to be installed on your servers; the checks run from outside.</p>
     <p>The service is built for website owners, small businesses, agencies and freelancers anywhere. It is in preparation: we are checking whether site owners need it before it is built.</p>
     <p>The service monitors and alerts; renewing and installing certificates stays with the site owner or their hosting provider.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Do I need to install anything on my server?</h3>
-    <p>No, certificates are checked from outside, the way a browser sees them.</p>
-    <h3>When do I get alerts?</h3>
-    <p>30, 14 and 3 days before expiry, and whenever a renewal fails or a certificate changes unexpectedly.</p>
-    <h3>Can I monitor subdomains and mail servers?</h3>
-    <p>Yes, any host name that serves a certificate.</p>
-    <h3>Does it renew certificates?</h3>
-    <p>No. It monitors and alerts; renewal stays with you or your hosting provider.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether site owners need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Do I need to install anything on my server?</h3><p>No, certificates are checked from outside, the way a browser sees them.</p></div>
+      <div class="split flip"><h3>When do I get alerts?</h3><p>30, 14 and 3 days before expiry, and whenever a renewal fails or a certificate changes unexpectedly.</p></div>
+      <div class="split flip"><h3>Can I monitor subdomains and mail servers?</h3><p>Yes, any host name that serves a certificate.</p></div>
+      <div class="split flip"><h3>Does it renew certificates?</h3><p>No. It monitors and alerts; renewal stays with you or your hosting provider.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether site owners need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Add your first domain</h2>
-    <p><label>Domains and subdomains to watch<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>1–5</option><option>6–20</option><option>21–100</option><option>More than 100</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Add your first domain</h2>
+    </div>
+    <div class="tile stack">
+      <label>Domains and subdomains to watch<select data-ev-focus="form_start"><option value="">— please choose —</option><option>1–5</option><option>6–20</option><option>21–100</option><option>More than 100</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Cert Expiry Watch</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Certificate monitoring for your sites. Renewal and installation stay with the site owner or hosting provider.</p>
+  <p>Certificate monitoring for your sites. Renewal and installation stay with the site owner or hosting provider.</p>
 </div></footer>
 
 </body>
